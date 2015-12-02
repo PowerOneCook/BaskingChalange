@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="position">
+        <item>G 가드</item>
+        <item>SG 슈팅가드</item>
+        <item>PG 포인트가드</item>
+        <item>F 포워드</item>
+        <item>PF 파워포워드</item>
+        <item>SF 스몰포워드</item>
+        <item>C 센터</item>
+        <item>N 없음</item>
+    </array>
+</resources>
