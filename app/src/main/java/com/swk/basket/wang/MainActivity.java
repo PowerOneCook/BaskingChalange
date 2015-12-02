@@ -88,9 +88,11 @@ public class MainActivity extends AppCompatActivity
             Intent i2 = new Intent(MainActivity.this,TeamActivity.class);
             startActivity(i2);
         } else if (id == R.id.nav_slideshow) {
-
+            Intent i3 = new Intent(MainActivity.this,InGameActivity.class);
+            startActivity(i3);
         } else if (id == R.id.nav_manage) {
-
+            Intent i4 = new Intent(MainActivity.this,WaitActivity.class);
+            startActivity(i4);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.percent.PercentRelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -9,5 +10,13 @@
         android:id="@+id/frag_wait_status"
         android:text="@string/frag_wait_status"
         android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="20%"
+        />
+    <ImageView
+        android:layout_below="@id/frag_wait_status"
+        app:layout_marginTopPercent="10%"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="40%"
+        android:src="@drawable/ball"
         />
 </android.support.percent.PercentRelativeLayout>

@@ -32,5 +32,12 @@
     <string name="btn_game_set">경기 종료</string>
     <string name="title_activity_wait">WaitActivity</string>
     <string name="frag_wait_status">선수를 모집하는 중입니다.</string>
+    <string name="frag_wait_game_name_ex">관악구NBA파이널</string>
+    <string name="frag_wait_game_type_ex">5:5 팀전</string>
+    <string name="frag_wait_game_time_ex">AM 11:30</string>
+    <string name="frag_wait_game_loc_ex">서울시 관악구 낙성대동</string>
+    <string name="frag_wait_game_req_pos_ex">현재 SG,PF 모집중</string>
+    <string name="btn_cancel">취소</string>
+    <string name="btn_join">참여</string>
 
 </resources>
