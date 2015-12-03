@@ -37,7 +37,14 @@
     <string name="frag_wait_game_time_ex">AM 11:30</string>
     <string name="frag_wait_game_loc_ex">서울시 관악구 낙성대동</string>
     <string name="frag_wait_game_req_pos_ex">현재 SG,PF 모집중</string>
+    <string name="frag_wait_game_req_num">모집인원 : </string>
+    <string name="frag_wait_game_req_num_ex">3/10</string>
     <string name="btn_cancel">취소</string>
     <string name="btn_join">참여</string>
-
+    <string name="btn_get_id">주최자 아이디 받기</string>
+    <string name="frag_team_type_player">개인별</string>
+    <string name="frag_team_type_game">경기별</string>
+    <string name="item_team_score_title_ex">마이클 조던</string>
+    <string name="item_team_score_win_ex">12승</string>
+    <string name="item_team_score_lose_ex">5패</string>
 </resources>

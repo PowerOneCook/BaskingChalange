@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        app:layout_heightPercent="15%"
+        android:id="@+id/frag_team_score_rg"
+        android:orientation="horizontal"
+        >
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_team_score_radio1"
+            android:text="@string/frag_team_type_player"
+            />
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_team_score_radio2"
+            android:text="@string/frag_team_type_game"
+            />
+    </RadioGroup>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/frag_team_score_list"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="85%"
+        android:layout_alignParentBottom="true"
+        />
+
+</android.support.percent.PercentRelativeLayout>
