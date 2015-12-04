@@ -30,7 +30,12 @@
             android:label="@string/title_activity_in_game" />
         <activity
             android:name=".WaitActivity"
-            android:label="@string/title_activity_wait"></activity>
+            android:label="@string/title_activity_wait"/>
+        <activity
+            android:name=".GameInfoActivity"
+            android:label="GameInfoActivity"
+            android:theme="@style/Base.Theme.AppCompat.Dialog"
+            />
     </application>
 
 </manifest>

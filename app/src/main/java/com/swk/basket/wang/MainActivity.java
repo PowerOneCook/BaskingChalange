@@ -94,6 +94,8 @@ public class MainActivity extends AppCompatActivity
             Intent i4 = new Intent(MainActivity.this,WaitActivity.class);
             startActivity(i4);
         } else if (id == R.id.nav_share) {
+            Intent i5 = new Intent(MainActivity.this,GameInfoActivity.class);
+            startActivity(i5);
 
         } else if (id == R.id.nav_send) {
 

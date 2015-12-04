@@ -38,8 +38,8 @@ public class WaitActivity extends AppCompatActivity {
 
         WaitPagerAdapter waitPagerAdapter = new WaitPagerAdapter(fm);
         waitPagerAdapter.addFragment(new TalkFragment(),"카카오톡");
-        waitPagerAdapter.addFragment(new JoinPlayerFrgment(),"참여선수");
-        waitPagerAdapter.addFragment(new JoinPlayerFrgment(),"보류선수");
+        waitPagerAdapter.addFragment(new PlayerFragment(),"참여선수");
+        waitPagerAdapter.addFragment(new PlayerFragment(),"보류선수");
         pager.setAdapter(waitPagerAdapter);
         tabs.setupWithViewPager(pager);
 
@@ -103,7 +103,7 @@ public class WaitActivity extends AppCompatActivity {
             if(tutorialIndex < 1){
                 tutorialIndex++;
             }
-            tutorial.setImageResource( tutorials[tutorialIndex]);
+            tutorial.setImageResource(tutorials[tutorialIndex]);
         }public void getTutorialprev() {
             if(tutorialIndex > 0){
                 tutorialIndex--;
@@ -135,70 +135,10 @@ public class WaitActivity extends AppCompatActivity {
             return v;
         }
     }
-    public static class JoinPlayerFrgment extends Fragment{
-        List<String> players;
-        public JoinPlayerFrgment() {
-            super();
-        }
 
-        @Override
-        public void onCreate(@Nullable Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            players = new ArrayList<>();
-        }
-        @Nullable
-        @Override
-        public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-            View v = inflater.inflate(R.layout.fragment_wait_join_player,container,false);
-            RecyclerView joinPlayerList = (RecyclerView)v.findViewById(R.id.frag_wait_join_player_list);
-            RecyclerView.LayoutManager manager = new LinearLayoutManager(container.getContext(),LinearLayoutManager.VERTICAL,false);
-            joinPlayerList.setLayoutManager(manager);
-            JoinPlayerAdapter joinPlayerAdapter = new JoinPlayerAdapter();
-            joinPlayerAdapter.add("정신병");
-            joinPlayerAdapter.add("정신병");
-            joinPlayerAdapter.add("정신병");
-            joinPlayerAdapter.add("정신병");
-            joinPlayerList.setAdapter(joinPlayerAdapter);
-            return v;
-        }
-    }
-    private static class JoinPlayerAdapter extends RecyclerView.Adapter<JoinPlayerAdapter.ViewHolder>{
-        static class ViewHolder extends RecyclerView.ViewHolder{
-            public ViewHolder(View itemView){
-                super(itemView);
-            }
-            AdapterView.OnItemClickListener mItemClickListner;
 
-            public void setOnItemClickListner(AdapterView.OnItemClickListener mItemClickListner) {
-                this.mItemClickListner = mItemClickListner;
-            }
-        }
-        List<String> items = new ArrayList<>();
-        AdapterView.OnItemClickListener mListener;
-        public void setOnItemClickListener(AdapterView.OnItemClickListener listener){
-            mListener = listener;
-        }
-        public void add(String item){
-            items.add(item);
-            notifyDataSetChanged();
-        }
 
-        @Override
-        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.player_card,parent,false);
-            return new ViewHolder(v);
-        }
 
-        @Override
-        public void onBindViewHolder(ViewHolder holder, int position) {
-            holder.setOnItemClickListner(mListener);
-        }
-
-        @Override
-        public int getItemCount() {
-            return items.size();
-        }
-    }
 
 
 

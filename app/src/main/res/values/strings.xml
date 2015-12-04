@@ -47,4 +47,8 @@
     <string name="item_team_score_title_ex">마이클 조던</string>
     <string name="item_team_score_win_ex">12승</string>
     <string name="item_team_score_lose_ex">5패</string>
+    <string name="frag_team_select_title">경기에 함께할 팀을 선택해주세요</string>
+    <string name="frag_team_select_message_ex">마이클 잭슨,서원국,홍재완,스테판 커리,제임스 하든\n위 엔트리로 경기에 출전 합니다.</string>
+    <string name="item_team_name_ex">휴스턴 로켓츠</string>
+    <string name="item_team_child_name_ex">제임스 하든</string>
 </resources>
