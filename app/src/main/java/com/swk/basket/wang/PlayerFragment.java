@@ -44,6 +44,7 @@ public class PlayerFragment extends Fragment {
     }
 
     private class JoinPlayerAdapter extends RecyclerView.Adapter<JoinPlayerAdapter.ViewHolder>{
+
         class ViewHolder extends RecyclerView.ViewHolder{
             public ViewHolder(View itemView){
                 super(itemView);
