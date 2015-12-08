@@ -108,13 +108,14 @@
     <android.support.v7.widget.RecyclerView
         app:layout_marginTopPercent="2%"
         app:layout_widthPercent="100%"
-        app:layout_heightPercent="37%"
+        app:layout_heightPercent="35%"
         android:id="@+id/team_score_list"
         android:layout_below="@id/team_mate_card"
         />
     <android.support.v7.widget.CardView
         app:layout_widthPercent="40%"
         app:layout_heightPercent="5%"
+        app:layout_marginTopPercent="2%"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         card_view:cardBackgroundColor="@color/colorPrimary"
         android:layout_below="@id/team_score_list"

@@ -51,4 +51,13 @@
     <string name="frag_team_select_message_ex">마이클 잭슨,서원국,홍재완,스테판 커리,제임스 하든\n위 엔트리로 경기에 출전 합니다.</string>
     <string name="item_team_name_ex">휴스턴 로켓츠</string>
     <string name="item_team_child_name_ex">제임스 하든</string>
+    <string name="frag_nav_start_ex">출발지점 : 서울시 관악구 낙성대동</string>
+    <string name="frag_nav_destination_ex">도착지점 : 미국 텍사스 휴스턴</string>
+    <string name="frag_nav_expect_ex">예상시간 : 207시간</string>
+    <string name="score_card_game_name_ex">관악 배스킷볼 챌린지 결승</string>
+    <string name="score_card_game_type_ex">5:5 팀전</string>
+    <string name="score_card_game_time_ex">01:30:50</string>
+    <string name="score_card_enemy_ex">골든 스테이트 워리어즈전</string>
+    <string name="score_card_result_ex">승</string>
 </resources>
+

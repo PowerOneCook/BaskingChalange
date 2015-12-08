@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_nav_start"
+        android:text="@string/frag_nav_start_ex"
+        />
+    <TextView
+        android:layout_below="@id/frag_nav_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_nav_destination"
+        android:text="@string/frag_nav_destination_ex"
 
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frag_nav_destination"
+        android:id="@+id/frag_nav_expect"
+        android:text="@string/frag_nav_expect_ex"
+        />
 </android.support.percent.PercentRelativeLayout>
